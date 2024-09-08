@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Profit Organization</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="backend.js" defer></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navigation -->
+    <header>
+        <nav class="bg-blue-600 text-white p-4">
+            <ul class="flex justify-center space-x-6">
+                <li><a href="#" onclick="showPage('home')" class="hover:underline">Home</a></li>
+                <li><a href="#" onclick="showPage('about')" class="hover:underline">About Us</a></li>
+                <li><a href="#" onclick="showPage('donate')" class="hover:underline">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <section id="home" class="page py-20 bg-white shadow-lg rounded-lg  ">
+      
+        <div class="flex items-center justify-center bg-white shadow-lg rounded-lg mx-auto max-w-5xl h-96 text-center"
+            style="background-image: url('https://www.bertelsmann-stiftung.de/fileadmin/files/_processed_/7/e/csm_AdobeStock_489642385_KONZERN_ST-BNG_gespiegelt_9b5a5aa9e8.jpg'); background-size: cover; background-position: center;">
+        
+            <div>
+                <h1 class="text-5xl font-bold text-blue-600 bg-opacity-80 bg-slate-300 rounded-l-3xl shadow-lg">Welcome to Our
+                    Non-Profit</h1>
+                <p class="mt-6 text-lg text-yellow-300 bg-opacity-80 bg-slate-300 rounded-3xl shadow-lg">Our mission is to make
+                    a difference in the world, one step at a time.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+            <!-- First Section -->
+            <div class="w-80 h-96 bg-white shadow-lg rounded-lg mx-auto"
+                style="background-image: url('https://static.politico.com/d5/18/1bb155734d619538bb69e6fabeb2/https-delivery-gettyimages.com/downloads/1243729890'); background-size: cover; background-position: center;">
+            </div>
+        
+            <!-- Second Section -->
+            <div class="w-80 h-96 bg-white shadow-lg rounded-lg mx-auto"
+                style="background-image: url('https://www.atlanticcouncil.org/wp-content/uploads/2023/08/2023-07-01T123641Z_2008728424_MT1SIPA000BO95A9_RTRMADP_3_SIPA-USA-1024x683.jpg'); background-size: cover; background-position: center;">
+            </div>
+        
+            <!-- Third Section -->
+            <div class="w-80 h-96 bg-white shadow-lg rounded-lg mx-auto"
+                style="background-image: url('https://static01.nyt.com/images/2022/05/20/world/20ukraine-blog-kharkiv-entrenching06sub/20ukraine-blog-kharkiv-entrenching06sub-square640.jpg'); background-size: cover; background-position: center;">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page text-center py-20 bg-white shadow-lg rounded-lg mx-auto max-w-4xl mt-10 hidden">
+        <h1 class="text-5xl font-bold text-blue-600">About Our Non-Profit</h1>
+        <p class="mt-6 text-lg text-gray-700">We are dedicated to improving the world. Our team is passionate about
+            making meaningful change in our community and beyond.</p>
+    </section>
+
+    <!-- Donate Page -->
+    <section id="donate" class="page text-center py-20 bg-white shadow-lg rounded-lg mx-auto max-w-4xl mt-10 hidden">
+        <h1 class="text-5xl font-bold text-blue-600">Make a Donation</h1>
+        <p class="mt-6 text-lg text-gray-700">Your contribution helps us continue our mission. Thank you for your
+            support!</p>
+        <button
+            class="bg-blue-600 text-white px-8 py-4 mt-6 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Donate
+            Now</button>
+    </section>
+
+</body>
+
+</html>
